@@ -1,23 +1,20 @@
 #account_nav,
-#account_nav > ul > li {
-  background: transparent;
-}
+#account_nav > ul > li,
 .acc-dropdown > .menu,
 .timeline-menu {
-  background-color: #3c4357;
+  background-color: #2b2a44;
 }
 
 #account_nav.sticky,
 #account_nav.sticky > ul > li {
-  background-color: #3c4357;
+  background-color: #2e2d4e;
 }
 
 #account_nav > ul > li.cur,
 #account_nav > ul > li:not(.static):hover,
 .acc-dropdown > .menu > li > a:hover,
 .timeline-menu__items li a:hover {
-  background-color: rgba(0,0,0,0.15) !important;
-  border-radius: 5px;
+  background-color: #18172f !important;
 }
 
 .acc-dropdown > .toggle::after {
@@ -41,17 +38,8 @@
   min-width: 1200px;
 }
 
-html {
-  background: #3c4357;
-}
-
 body {
   font-family: "Euclid Circular A", arial;
-  background: linear-gradient(90deg, #5c657a -2.5%, #363c52 101.17%) !important;
-}
-
-.header, .footer {
-  background: none;
 }
 
 .preDefinedReports,
@@ -60,7 +48,7 @@ body {
 }
 
 #page_inner {
-  background: transparent;
+  background: #2b2a44; /* #8c99a2 */
   background-color: none;
   /* background: radial-gradient(ellipse at top, #8c99a2, #b0b9c1),
     radial-gradient(ellipse at bottom, #b0b9c1, transparent); */
