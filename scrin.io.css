@@ -118,7 +118,7 @@ table.empls > tbody > tr > * {
 }
 
 .empl-status.online {
-  box-shadow: 0 0 0 0.5px #fff;
+  box-shadow: 0 0 0 0.2px #fff;
 }
 
 .dataFilter > input {
