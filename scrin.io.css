@@ -116,3 +116,7 @@ table.empls > tbody > tr > * {
   background: #394054;
   border-radius: 5px;
 }
+
+empl-status.online {
+  box-shadow: 0 0 0 0.5px #fff;
+}
