@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 #account_nav,
 #account_nav > ul > li {
   background: transparent;
