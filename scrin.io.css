@@ -117,6 +117,10 @@ table.empls > tbody > tr > * {
   border-radius: 5px;
 }
 
-empl-status.online {
+.empl-status.online {
   box-shadow: 0 0 0 0.5px #fff;
+}
+
+.dataFilter > input {
+  width: calc(100% - 14px);
 }
