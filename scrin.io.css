@@ -143,3 +143,8 @@ div#content_wide.admin {
   transition: background 0.3s;
   color: #fff;
 }
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, select {
+  box-shadow: none;
+  padding: .5em;
+}
