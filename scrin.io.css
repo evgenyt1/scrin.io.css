@@ -148,3 +148,13 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
   box-shadow: none;
   padding: .5em;
 }
+
+.success-message {
+  width: 1120px;
+  max-width: 95vw;
+  border: none;
+  box-shadow: navajowhite;
+  border-radius: 5px;
+  background: #66a84b;
+  color: #fff;
+}
