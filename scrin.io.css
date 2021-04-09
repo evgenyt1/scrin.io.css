@@ -131,3 +131,15 @@ div#content_wide.admin {
   width: 100%;
   padding: 3vw;
 }
+
+.action_micro:hover {
+  background: #5ea541;
+}
+
+.action_micro {
+  background: #7acb59;
+  border: none;
+  padding: .8em 1.5em;
+  transition: background 0.3s;
+  color: #fff;
+}
