@@ -124,3 +124,10 @@ table.empls > tbody > tr > * {
 .dataFilter > input {
   width: calc(100% - 14px);
 }
+
+div#content_wide.admin {
+  background: #fff;
+  margin: 0;
+  width: 100%;
+  padding: 3vw;
+}
