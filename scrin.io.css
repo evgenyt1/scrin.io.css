@@ -166,6 +166,6 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
   padding: .6em 2em;
 }
 
-.action_main:hover {
+.action_main:hover, form input.action_main[type="submit"]:hover {
   background: #5ea541;
 }
