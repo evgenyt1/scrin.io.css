@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+img {
+  vertical-align: middle;
+}
 #account_nav,
 #account_nav > ul > li {
   background: transparent;
