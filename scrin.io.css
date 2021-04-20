@@ -68,6 +68,7 @@ body {
   font-family: "Euclid Circular A", arial;
   background: linear-gradient(90deg, #5c657a -2.5%, #363c52 101.17%) !important;
   min-width: 1200px;
+  color: #464952;
 }
 
 .header,
@@ -102,7 +103,6 @@ div#content_wrapper {
 div#page_title {
   border-radius: 0;
   background: #DADDE5;
-  color: #464952;
   /*background: #bec3ce;*/
   /* #ccd8e0; */
 }
