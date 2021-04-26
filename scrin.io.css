@@ -12,7 +12,7 @@ img {
 .acc-dropdown > .menu,
 .timeline-menu {
   background-color: rgba(17, 23, 41, 0.8);
-  -webkit-backdrop-filter: blur(5px);)
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 5px;
 }
@@ -102,7 +102,7 @@ div#content_wrapper {
 }
 div#page_title {
   border-radius: 0;
-  background: #DADDE5;
+  background: #dadde5;
   /*background: #bec3ce;*/
   /* #ccd8e0; */
 }
@@ -145,14 +145,19 @@ div#content_wide.admin {
 .action_micro {
   background: #7acb59;
   border: none;
-  padding: .8em 1.5em;
+  padding: 0.8em 1.5em;
   transition: background 0.3s;
   color: #fff;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, select {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
   box-shadow: none;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .success-message {
@@ -165,13 +170,20 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
   color: #fff;
 }
 
-.action_main, form input.action_main[type="submit"] {
+.action_main,
+form input.action_main[type="submit"] {
   background: #7acb59;
   border: none;
   border-radius: 5px;
-  padding: .6em 2em;
+  padding: 0.6em 2em;
 }
 
-.action_main:hover, form input.action_main[type="submit"]:hover {
+.action_main:hover,
+form input.action_main[type="submit"]:hover {
   background: #5ea541;
+}
+
+.__no-employments .empty-thank {
+  background: none;
+  font-size: 1rem;
 }
