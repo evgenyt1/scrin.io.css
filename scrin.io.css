@@ -388,6 +388,11 @@ form input.action_main[type="submit"]:hover {
   width: 255px;
 }
 
+.filter_container,
+.chartsContainer,
+.reportBodyContainer > .rpt-data.group > tbody .group-0 {
+  background: #f1f2f7;
+}
 .filter_container .action_micro {
   background: #7acb59;
   text-transform: uppercase;
@@ -457,4 +462,11 @@ table.empls .project-label {
 .plan-select.selected {
   background: #e5e7ec;
   box-shadow: none;
+}
+
+table.empls tr:nth-child(2) {
+  background: #f7f7fb !important;
+}
+table.empls tr:nth-child(2) > td {
+  color: #979fad !important;
 }
