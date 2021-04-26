@@ -106,6 +106,10 @@ div#page_title {
   /*background: #bec3ce;*/
   /* #ccd8e0; */
 }
+.account_layout div#page_title h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
 
 table.empls > tbody > tr > * {
   border-bottom: 1px dotted #aaa;
@@ -136,6 +140,10 @@ div#content_wide.admin {
   margin: 0;
   width: 100%;
   padding: 3vw;
+}
+
+div#page_title > .__timezone-switch {
+  font-weight: 200;
 }
 
 .action_micro:hover {
@@ -169,6 +177,9 @@ select {
   background: #7abd5e;
   color: #fff;
 }
+.fancyserif {
+  font-family: inherit;
+}
 
 .action_main,
 form input.action_main[type="submit"] {
@@ -176,6 +187,7 @@ form input.action_main[type="submit"] {
   border: none;
   border-radius: 5px;
   padding: 0.6em 2em;
+  font-family: inherit;
 }
 
 .action_main:hover,
@@ -186,4 +198,244 @@ form input.action_main[type="submit"]:hover {
 .__no-employments .empty-thank {
   background: none;
   font-size: 1rem;
+  margin: 5px 0 0;
+}
+
+.__no-employments .action_main {
+  background: #747c96;
+  transition: 0.3s background-color;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: none;
+  font-size: 1.1rem;
+  line-height: 1.4em;
+  padding: 18px 0 14px;
+}
+
+.__no-employments .action_main > div {
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  /* opacity: 0.8; */
+  font-family: inherit;
+}
+
+.__no-employments .action_main:focus,
+.__no-employments .action_main:hover {
+  background: #5a627e;
+}
+
+.__no-employments .action_main > span {
+  display: none;
+}
+
+.__no-employments .empty-action {
+  background: none !important;
+  margin-top: 0;
+}
+.__no-employments .empty-action:first-child .action_main {
+  background: #8dc768;
+}
+
+.__no-employments .empty-action:first-child .action_main:focus,
+.__no-employments .empty-action:first-child .action_main:hover {
+  background: #689c47;
+}
+
+.__no-employments .empty-or {
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-top: 60px;
+}
+
+.__no-employments .empty-action > div {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f6f9;
+  /* background-image: url(/Content/assets/images/content/feature-track-time@2x.png); */
+  background-size: 150%;
+  min-height: 330px;
+}
+.__no-employments .empty-action:first-child > div {
+  background-image: url(https://scrin.io/Content/assets/images/content/feature-track-time@2x.png);
+}
+
+.__no-employments .empty-action > div > img {
+  visibility: hidden;
+}
+
+.react-toggle--checked .react-toggle-track,
+.react-toggle.react-toggle--checked:hover .react-toggle-track,
+.radio-success input[type="radio"]:checked + label::after {
+  background-color: #8dc768;
+}
+.radio-success input[type="radio"]:checked + label::before {
+  border-color: #8dc768;
+}
+
+/* Team */
+.container__team__list-item-active,
+.container__clients__list-item-active,
+.container__projects__list-item-active,
+.csettings__list-item-active {
+  border-color: #aad490;
+  border-left-width: 6px;
+  border-radius: 4px;
+  background: #f1f2f6;
+}
+.container__team__list-item,
+.container__clients__list-item,
+.container__projects__list-item,
+.csettings__list-item {
+  border-left-width: 6px;
+  transition: background-color 0.3s;
+}
+.container__team__list-item:hover,
+.container__clients__list-item:hover,
+.container__projects__list-item:hover,
+.csettings__list-item:hover {
+  background: #f1f2f6;
+  border-color: #aad490;
+  border-radius: 4px;
+}
+
+.container__team-index,
+.container__clients-index,
+.container__projects-index {
+  color: inherit;
+  background: #fff !important;
+  border: solid 1px #c8ccd5;
+  border-radius: 50%;
+  min-width: 22px;
+  margin: 0 10px;
+}
+
+.container__team__list,
+.container__clients__list,
+.container__projects__list,
+.csettings__list {
+  border-right-color: #f1f2f6;
+  padding-right: 4px;
+}
+.container__team__list > div:last-child,
+.container__clients__list > div:last-child,
+.container__projects__list > div:first-child {
+  margin-right: 0 !important;
+}
+
+.container__team__details,
+.container__clients__details,
+.container__projects__details,
+.csettings__detail {
+  border-left-color: #f1f2f6;
+}
+
+.container__team__list .input-group > input,
+.container__clients__list .input-group > input,
+.container__projects__list .input-group > input {
+  border-radius: 5px !important;
+  border-color: #cfd3dc;
+}
+.container__team__list .input-group > .input-group-btn,
+.container__clients__list .input-group > .input-group-btn,
+.container__projects__list .input-group > .input-group-btn {
+  padding-left: 7px;
+}
+.container__team__list .input-group .btn,
+.container__clients__list .input-group .btn,
+.container__projects__list .input-group .btn {
+  border-radius: 5px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.input-group-btn .btn-default {
+  color: #fff !important;
+  background: #8dc768;
+  border-color: #8dc768;
+}
+.input-group-btn .btn-default:hover,
+.input-group-btn .btn-default:focus {
+  background: #77af53;
+}
+
+.csettings__detail-descr {
+  color: #fff;
+  background: #5a6477;
+  border-radius: 5px;
+}
+.csettings__detail-descr a {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.editLogContainer .loading {
+  width: 255px;
+}
+
+.filter_container .action_micro {
+  background: #7acb59;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 15px;
+  padding: 10px 30px;
+  font-size: 1rem;
+}
+.filter_container .action_micro:hover,
+.filter_container .action_micro:focus {
+  background: #77af53;
+}
+.filter_container .manageReport > div .weaklink {
+  margin-right: 18px;
+}
+
+.filter_container .manageReport > div {
+  padding-top: 10px;
+}
+
+.container__team__list > .userGroup {
+  margin-right: 0 !important;
+}
+
+.joyride-tooltip__button--primary {
+  background: #7acb59;
+  padding: 10px 15px;
+}
+.joyride-tooltip__button--primary:hover,
+.joyride-tooltip__button--primary:focus {
+  background: #77af53;
+}
+.joyride-tooltip__button--skip {
+  margin-top: 5px;
+}
+.joyride-tooltip__header {
+  border-color: #eee;
+  color: inherit;
+  font-weight: 500;
+}
+
+a._myhome-screen:focus,
+a._myhome-screen:hover {
+  border-color: #8293b3;
+  transition: border-color 0.3s;
+}
+
+.project-label {
+  padding: 4px;
+}
+table.empls .project-label {
+  padding-bottom: 3px;
+}
+.empl-status.online {
+  background: #6abb47;
 }
