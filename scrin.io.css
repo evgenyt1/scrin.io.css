@@ -272,6 +272,11 @@ form input.action_main[type="submit"]:hover {
   visibility: hidden;
 }
 
+.react-toggle-track,
+.react-toggle:hover .react-toggle-track {
+  background-color: #a1a7b5;
+}
+
 .react-toggle--checked .react-toggle-track,
 .react-toggle.react-toggle--checked:hover .react-toggle-track,
 .radio-success input[type="radio"]:checked + label::after {
