@@ -390,7 +390,8 @@ form input.action_main[type="submit"]:hover {
 
 .filter_container,
 .chartsContainer,
-.reportBodyContainer > .rpt-data.group > tbody .group-0 {
+.reportBodyContainer > .rpt-data.group > tbody .group-0,
+.noData {
   background: #f1f2f7;
 }
 .filter_container .action_micro {
@@ -465,7 +466,7 @@ table.empls .project-label {
 }
 
 table.empls tr:nth-child(2) {
-  background: #f7f7fb !important;
+  background: #f7f7f9 !important;
 }
 table.empls tr:nth-child(2) > td {
   color: #979fad !important;
