@@ -505,3 +505,7 @@ table.empls tr:nth-child(2) > td {
   border-radius: 3px;
   margin-top: -2px;
 }
+.upgrade > i {
+  margin-left: 9px;
+  margin-right: 12px;
+}
