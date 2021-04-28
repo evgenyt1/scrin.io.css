@@ -1,0 +1,73 @@
+.scrinio-bar {
+  background: #5178e7;
+  color: #fff;
+  font-family: "Euclid Circular A", arial;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 20px;
+  padding: 10px 0 8px;
+  vertical-align: middle;
+  transition: margin-top 0.7s;
+}
+.scrinio-bar.unloaded {
+  margin-top: -100%;
+}
+.scrinio-bar > a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+.scrinio-bar > a:hover {
+  opacity: 1;
+}
+.scrinio-bar > a > img {
+  height: 28px;
+  vertical-align: middle;
+  padding: 0 5px 4px 5px;
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://scrin.io/Content/assets/fonts/EuclidCircularA-Light.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://scrin.io/Content/assets/fonts/EuclidCircularA-Regular.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://scrin.io/Content/assets/fonts/EuclidCircularA-Italic.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://scrin.io/Content/assets/fonts/EuclidCircularA-Medium.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://scrin.io/Content/assets/fonts/EuclidCircularA-SemiBold.woff2)
+    format("woff2");
+}
