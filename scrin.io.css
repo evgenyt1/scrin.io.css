@@ -476,3 +476,12 @@ table.empls tr:nth-child(2) {
 table.empls tr:nth-child(2) > td {
   color: #979fad !important;
 }
+
+#bupgrade {
+  background: #7acb59;
+  border: none;
+}
+#bupgrade:hover,
+#bupgrade:focus {
+  background: #5ea541;
+}
