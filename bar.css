@@ -12,10 +12,13 @@
   font-size: 20px;
   padding: 10px 0 8px;
   vertical-align: middle;
-  transition: transform 0.7s;
+  transition: margin-top 0.7s;
+}
+.scrinio-bar.unloaded {
+  height: 0;
 }
 .scrinio-bar.unloaded > div {
-  transform: translate(0, -150%);
+  margin-top: -150px;
 }
 .scrinio-bar > div > a {
   color: #fff;
