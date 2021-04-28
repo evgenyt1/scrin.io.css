@@ -1,5 +1,5 @@
 (function () {
-  return;
+  
   function preloadFonts() {
     /*
         <link rel="preload" href="https://scrin.io/Content/assets/fonts/EuclidCircularA-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,8 +42,10 @@
     // prepare
     const html = `
   <div class="scrinio-bar unloaded">
-    <a href='https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout'>Hey there, try 
-    <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! &nbsp;Same service, new name.</a> 
+    <div>
+      <a href='https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout'>Hey there, try 
+      <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! &nbsp;Same service, new name.</a> 
+    </div>
   </div>
   `;
     const div = document.createElement("div");
