@@ -490,3 +490,8 @@ table.empls tr:nth-child(2) > td {
 .__over-free {
   font-size: 15px;
 }
+
+.demo-button > a {
+  color: #fff !important;
+  text-decoration: underline;
+}
