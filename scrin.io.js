@@ -1,5 +1,5 @@
 (function () {
-  
+  return;
   function preloadFonts() {
     /*
         <link rel="preload" href="https://scrin.io/Content/assets/fonts/EuclidCircularA-Regular.woff2" as="font" type="font/woff2" crossorigin>
