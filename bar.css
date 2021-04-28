@@ -4,8 +4,8 @@
 }
 
 .scrinio-bar > div {
-  background: #5178e7;
-  color: #fff;
+  background: #5178e7 !important;
+  color: #fff !important;
   font-family: "Euclid Circular A", arial;
   text-align: center;
   line-height: 1.5em;
@@ -33,6 +33,7 @@
   height: 28px;
   vertical-align: middle;
   padding: 0 5px 4px 5px;
+  display: inline;
 }
 
 @font-face {
