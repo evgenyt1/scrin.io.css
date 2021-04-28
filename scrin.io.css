@@ -174,10 +174,10 @@ select {
 }
 
 .success-message {
-  width: 1120px;
+  width: 1134;
   max-width: 95vw;
   border: none;
-  box-shadow: navajowhite;
+  box-shadow: none;
   border-radius: 5px;
   background: #7abd5e;
   color: #fff;
