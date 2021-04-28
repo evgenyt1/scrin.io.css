@@ -18,7 +18,7 @@
   height: 0;
 }
 .scrinio-bar.unloaded > div {
-  margin-top: -150px;
+  margin-top: -150px !important;
 }
 .scrinio-bar > div > a {
   color: #fff;
@@ -33,7 +33,7 @@
   height: 28px;
   vertical-align: middle;
   padding: 0 5px 4px 5px;
-  display: inline;
+  display: inline !important;
 }
 
 @font-face {
