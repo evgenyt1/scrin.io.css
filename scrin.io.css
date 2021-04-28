@@ -495,3 +495,13 @@ table.empls tr:nth-child(2) > td {
   color: #fff !important;
   text-decoration: underline;
 }
+
+.upgrade {
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.upgrade button {
+  border-radius: 3px;
+  margin-top: -2px;
+}
