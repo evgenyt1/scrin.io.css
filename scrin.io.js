@@ -1,5 +1,4 @@
 (function () {
-  return;
   function preloadFonts() {
     /*
         <link rel="preload" href="https://scrin.io/Content/assets/fonts/EuclidCircularA-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -49,7 +48,10 @@
     div.innerHTML = html;
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "bar.css";
+    link.href =
+      document.location.hostname === "127.0.0.1"
+        ? "bar.css"
+        : "https://expofp.github.io/scrin.io.css/bar.css";
     link.onload = function () {
       document.body.prepend(div);
       setTimeout(() => {
