@@ -21,10 +21,11 @@
     )
       return false;
 
-    let myId = parseInt(localStorage.getItem("barid2"));
+    const key = "barid2";
+    let myId = parseInt(localStorage.getItem(key));
     if (!myId) {
       myId = Math.floor(Math.random() * 1000);
-      localStorage.setItem("barid2", myId);
+      localStorage.setItem(key, myId);
     }
     console.log("scrinio bar id", myId);
     if (myId < 10) return true;
