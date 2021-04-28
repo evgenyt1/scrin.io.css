@@ -193,6 +193,7 @@ form input.action_main[type="submit"] {
   border-radius: 5px;
   padding: 0.6em 2em;
   font-family: inherit;
+  transition: background-color 0.3s;
 }
 
 .action_main:hover,
