@@ -1,5 +1,4 @@
 (function () {
-    return;
   function preloadFonts() {
     /*
         <link rel="preload" href="https://scrin.io/Content/assets/fonts/EuclidCircularA-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -10,7 +9,12 @@
   }
 
   function shouldRun() {
-    if (document.location.pathname !== "/") return false;
+    if (
+      document.location.pathname !== "/" &&
+      document.location.pathname !== "/home" &&
+      document.location.pathname !== "/pricing"
+    )
+      return false;
     if (
       document.location.hostname !== "screenshotmonitor.com" &&
       document.location.hostname !== "127.0.0.1"
