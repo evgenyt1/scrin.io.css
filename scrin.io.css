@@ -261,12 +261,13 @@ form input.action_main[type="submit"]:hover {
   border-radius: 10px;
   overflow: hidden;
   background: #f5f6f9;
-  /* background-image: url(/Content/assets/images/content/feature-track-time@2x.png); */
-  background-size: 150%;
-  min-height: 330px;
+  background-image: url(https://expofp.github.io/scrin.io.css/welcome-right.svg);
+  background-size: 140%;
+  min-height: 354px;
 }
 .__no-employments .empty-action:first-child > div {
-  background-image: url(https://scrin.io/Content/assets/images/content/feature-track-time@2x.png);
+  background-size: 160%;
+  background-image: url(https://expofp.github.io/scrin.io.css/welcome-left.svg);
 }
 
 .__no-employments .empty-action > div > img {
