@@ -44,7 +44,7 @@
   <div class="scrinio-bar unloaded">
     <div>
       <a href='https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout'>Hey there, try 
-      <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! &nbsp;Same service, new name.</a> 
+      <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! <b>Same service, new name.</b></a> 
     </div>
   </div>
   `;
@@ -55,7 +55,7 @@
     link.href =
       document.location.hostname === "127.0.0.1"
         ? "bar.css"
-        : "https://expofp.github.io/scrin.io.css/bar.css";
+        : "https://expofp.github.io/scrin.io.css/bar.css?1";
     link.onload = function () {
       document.body.prepend(div);
       setTimeout(() => {

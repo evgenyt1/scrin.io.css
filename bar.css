@@ -26,6 +26,11 @@
   opacity: 0.85;
   transition: opacity 0.3s;
 }
+.scrinio-bar > div > a > b {
+  color: #fff !important;
+  font-weight: normal !important;
+  white-space: nowrap;
+}
 .scrinio-bar > div > a:hover {
   opacity: 1;
 }
