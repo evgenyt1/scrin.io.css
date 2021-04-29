@@ -510,3 +510,23 @@ table.empls tr:nth-child(2) > td {
     margin-left: 9px;
     margin-right: 12px;
 }
+
+.checkbox.checkbox-inline.checkbox-mini label {
+    outline: none;
+}
+.checkbox.checkbox-inline.checkbox-mini label:before {
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    margin-left: -18px;
+    left: 0px;
+    outline: none !important;
+    cursor: pointer;
+}
+.checkbox.checkbox-inline.checkbox-mini label:after {
+    margin-left: -18px;
+    padding-top: 5px;
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: none !important;
+}
