@@ -40,7 +40,7 @@
   <div class="scrinio-bar unloaded">
     <div>
       <a href='https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout'>Hey there, try 
-      <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! <b>Same service, new name.</b></a> 
+      <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! <b>Same service, new name</b></a> 
     </div>
   </div>
   `;
