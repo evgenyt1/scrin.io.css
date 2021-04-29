@@ -9,4 +9,4 @@ TODO:
 
 TOCHECK:
 - check signup auto-login and auto-download
-- email - link
+- email - links

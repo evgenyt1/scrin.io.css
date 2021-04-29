@@ -22,9 +22,10 @@
       return false;
 
     const key = "barid2";
+    const force = document.location.search.indexOf("barforce=1") !== -1;
     let myId = parseInt(localStorage.getItem(key));
-    if (!myId) {
-      myId = Math.floor(Math.random() * 1000);
+    if (!myId || force) {
+      myId = force ? 1 : Math.floor(Math.random() * 1000);
       localStorage.setItem(key, myId);
     }
     console.log("scrinio bar id", myId);
