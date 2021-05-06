@@ -532,5 +532,6 @@ table.empls tr:nth-child(2) > td {
 }
 
 .loader > div {
+    background-color: #bdc0c7;
     border-radius: 2px;
 }
