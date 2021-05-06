@@ -530,3 +530,7 @@ table.empls tr:nth-child(2) > td {
 .checkbox input[type="checkbox"]:focus + label::before {
     outline: none !important;
 }
+
+.loader > div {
+    border-radius: 2px;
+}
