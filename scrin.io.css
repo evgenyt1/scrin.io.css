@@ -459,6 +459,10 @@ table.empls .project-label {
     background: #6abb47;
 }
 
+.plan-select {
+    transition: background-color 0.3s;
+}
+
 .plan-select label {
     font-weight: 500;
     color: #32394a !important;
