@@ -1,13 +1,4 @@
 (function () {
-    function preloadFonts() {
-        /*
-        <link rel="preload" href="https://scrin.io/Content/assets/fonts/EuclidCircularA-Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://scrin.io/Content/assets/fonts/EuclidCircularA-Italic.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://scrin.io/Content/assets/fonts/EuclidCircularA-Medium.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="https://scrin.io/Content/assets/fonts/EuclidCircularA-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-        */
-    }
-
     function shouldRun() {
         if (
             document.location.pathname !== "/" &&
@@ -35,7 +26,7 @@
         if (alreadyRun) return;
         alreadyRun = true;
 
-        const link = window.scrinioAuth
+        const url = window.scrinioAuth
             ? "https://scrin.io/myhome?auth=" + window.scrinioAuth + "&utm_source=ssm&utm_medium=bar&utm_campaign=rollout"
             : "https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout";
 
@@ -45,7 +36,7 @@
   <div class="scrinio-bar unloaded">
     <div>
       <a href='` +
-            link +
+            url +
             `'>Hey there, try 
       <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! <b>Same service, new name</b></a> 
     </div>
