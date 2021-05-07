@@ -35,11 +35,18 @@
         if (alreadyRun) return;
         alreadyRun = true;
 
+        const link = window.scrinioAuth
+            ? "https://scrin.io/myhome?auth=" + window.scrinioAuth + "&utm_source=ssm&utm_medium=bar&utm_campaign=rollout"
+            : "https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout";
+
         // prepare
-        const html = `
+        const html =
+            `
   <div class="scrinio-bar unloaded">
     <div>
-      <a href='https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout'>Hey there, try 
+      <a href='` +
+            link +
+            `'>Hey there, try 
       <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! <b>Same service, new name</b></a> 
     </div>
   </div>
