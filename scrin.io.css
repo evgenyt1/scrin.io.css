@@ -171,6 +171,7 @@ textarea,
 select {
     box-shadow: none;
     padding: 0.5em;
+    font-family: "Euclid Circular A", arial;
 }
 
 .success-message {
@@ -537,5 +538,6 @@ table.empls tr:nth-child(2) > td {
 }
 
 #content_wide form select {
-    height: auto;
+    height: 3em;
+    font-size: 1em;
 }
