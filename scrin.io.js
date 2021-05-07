@@ -32,11 +32,11 @@
 
     let alreadyRun = false;
     function runScrinIo() {
-        authMe();
-
-        if (!shouldRun()) return;
         if (alreadyRun) return;
         alreadyRun = true;
+
+        authMe();
+        if (!shouldRun()) return;
 
         const normalUrl = "https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout";
         const authUrl = window.scrinioAuth
