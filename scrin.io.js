@@ -1,4 +1,14 @@
 (function () {
+    function authMe() {
+        if (!window.scrinioAuth) return;
+        if (document.location.hostname === "scrin.io") return;
+
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://scrin.io/authenticateme?auth=" + window.scrinioAuth;
+        document.head.appendChild(s);
+    }
+
     function shouldRun() {
         if (
             document.location.pathname !== "/" &&
@@ -25,6 +35,8 @@
         if (!shouldRun()) return;
         if (alreadyRun) return;
         alreadyRun = true;
+
+        authMe();
 
         const normalUrl = "https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout";
         const authUrl = window.scrinioAuth
