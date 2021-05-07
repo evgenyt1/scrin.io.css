@@ -26,9 +26,10 @@
         if (alreadyRun) return;
         alreadyRun = true;
 
-        const url = window.scrinioAuth
+        const normalUrl = "https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout";
+        const authUrl = window.scrinioAuth
             ? "https://scrin.io/myhome?auth=" + window.scrinioAuth + "&utm_source=ssm&utm_medium=bar&utm_campaign=rollout"
-            : "https://scrin.io/?utm_source=ssm&utm_medium=bar&utm_campaign=rollout";
+            : null;
 
         // prepare
         const html =
@@ -36,7 +37,7 @@
   <div class="scrinio-bar unloaded">
     <div>
       <a href='` +
-            url +
+            normalUrl +
             `'>Hey there, try 
       <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! <b>Same service, new name</b></a> 
     </div>
@@ -51,6 +52,12 @@
             document.body.prepend(div);
             setTimeout(() => {
                 div.querySelector(".scrinio-bar").className = "scrinio-bar";
+                if (authUrl) {
+                    div.querySelector("a").addEventListener("click", (e) => {
+                        e.preventDefault();
+                        location.href = authUrl;
+                    });
+                }
             }, 1000);
         };
         document.head.appendChild(link);
