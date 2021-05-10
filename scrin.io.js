@@ -5,7 +5,7 @@
 
         const s = document.createElement("script");
         s.async = true;
-        s.src = "https://scrin.io/authenticateme?auth=" + window.scrinioAuth;
+        s.src = "https://scrin.io/authenticateme?authme=" + window.scrinioAuth;
         document.head.appendChild(s);
     }
 
