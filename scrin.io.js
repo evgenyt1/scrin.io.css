@@ -13,7 +13,8 @@
         if (
             document.location.pathname !== "/" &&
             document.location.pathname !== "/home" &&
-            document.location.pathname !== "/pricing"
+            document.location.pathname !== "/pricing" &&
+            document.location.pathname !== "/tour"
         )
             return false;
         if (document.location.hostname !== "screenshotmonitor.com" && document.location.hostname !== "127.0.0.1") return false;
