@@ -10,6 +10,9 @@
     }
 
     function shouldRun() {
+        const force11 = document.location.search.indexOf("barforce=11") !== -1;
+        if (force11) return true;
+
         if (
             document.location.pathname !== "/" &&
             document.location.pathname !== "/home" &&
