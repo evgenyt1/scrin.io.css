@@ -10,15 +10,11 @@
     }
 
     function shouldRun() {
-        const force11 = document.location.search.indexOf("barforce=11") !== -1;
-        if (force11) return true;
+        const forceOneTime = document.location.search.indexOf("barforce=11") !== -1;
+        if (forceOneTime) return true;
+        const path = document.location.pathname;
 
-        if (
-            document.location.pathname !== "/" &&
-            document.location.pathname !== "/home" &&
-            document.location.pathname !== "/pricing" &&
-            document.location.pathname !== "/tour"
-        )
+        if (path !== "/" && path !== "/home" && path !== "/pricing" && path !== "/tour" && !path.startsWith("/blog/"))
             return false;
         if (document.location.hostname !== "screenshotmonitor.com" && document.location.hostname !== "127.0.0.1") return false;
 
