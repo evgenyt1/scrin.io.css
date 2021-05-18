@@ -43,15 +43,13 @@
             ? "https://scrin.io/myhome?auth=" + window.scrinioAuth + "&utm_source=ssm&utm_medium=bar&utm_campaign=rollout"
             : null;
 
+        const logoUrl = "https://scrin.io/Content/assets/images/logo_scrinio.svg";
         // prepare
-        const html =
-            `
+        const html = `
   <div class="scrinio-bar unloaded">
     <div>
-      <a href='` +
-            normalUrl +
-            `'>Hey there, try 
-      <img src='https://scrin.io/Content/assets/images/logo_scrinio.svg' alt='scrin.io'/> instead! <b>Same service, new name</b></a> 
+      <a href='${normalUrl}'>Hey there, try 
+      <img src='${logoUrl}' alt='scrin.io'/> instead! <b>Same service, new name</b></a> 
     </div>
   </div>
   `;
@@ -59,7 +57,7 @@
         div.innerHTML = html;
         const link = document.createElement("link");
         link.rel = "stylesheet";
-        link.href = document.location.hostname === "127.0.0.1" ? "bar.css" : "https://expofp.github.io/scrin.io.css/bar.css?1";
+        link.href = document.location.hostname === "127.0.0.1" ? "bar.css" : "https://expofp.github.io/scrin.io.css/bar.css?2";
         link.onload = onLoad;
 
         let loads = 0;
@@ -79,9 +77,9 @@
             }, 1000);
         }
 
-        const img = new Image();
-        img.onload = onLoad;
-        img.src = "https://scrin.io/Content/assets/images/logo_scrinio.svg";
+        const logoPreloadImg = new Image();
+        logoPreloadImg.onload = onLoad;
+        logoPreloadImg.src = logoUrl;
 
         document.head.appendChild(link);
     }
