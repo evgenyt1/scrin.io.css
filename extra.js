@@ -8,6 +8,7 @@ function runExtra() {
     img.onload = function () {
         const el = document.querySelector(".user-panel__dropdown");
         // el.style.transition = "none";
+        el.style.boxShadow = "inset 0 0 0 1px #3d4458";
         el.style.background = `url(${url})`;
         el.style.backgroundPosition = "center";
         el.style.backgroundSize = "contain";
