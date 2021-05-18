@@ -7,7 +7,7 @@ function runExtra() {
     const img = new Image();
     img.onload = function () {
         const el = document.querySelector(".user-panel__dropdown");
-        el.style.transition = "none";
+        // el.style.transition = "none";
         el.style.background = `url(${url})`;
         el.style.backgroundPosition = "center";
         el.style.backgroundSize = "contain";
