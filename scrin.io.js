@@ -60,7 +60,13 @@
         const link = document.createElement("link");
         link.rel = "stylesheet";
         link.href = document.location.hostname === "127.0.0.1" ? "bar.css" : "https://expofp.github.io/scrin.io.css/bar.css?1";
-        link.onload = function () {
+        link.onload = onLoad;
+
+        let loads = 0;
+        function onLoad() {
+            loads++;
+            if (loads !== 2) return;
+
             document.body.prepend(div);
             setTimeout(() => {
                 div.querySelector(".scrinio-bar").className = "scrinio-bar";
@@ -71,7 +77,12 @@
                     });
                 }
             }, 1000);
-        };
+        }
+
+        const img = new Image();
+        img.onload = onLoad;
+        img.src = "https://scrin.io/Content/assets/images/logo_scrinio.svg";
+
         document.head.appendChild(link);
     }
 
