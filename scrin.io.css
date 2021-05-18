@@ -549,3 +549,8 @@ table.empls tr:nth-child(2) > td {
 .admin #report-table {
     background-color: #fff;
 }
+
+.admin-timings {
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+}
