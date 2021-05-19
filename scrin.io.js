@@ -26,7 +26,7 @@
             localStorage.setItem(key, myId);
         }
         console.log("scrinio bar id", myId);
-        if (myId < 500) return true;
+        if (myId < 1000) return true;
         return false;
     }
 
