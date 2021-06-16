@@ -558,4 +558,5 @@ table.empls tr:nth-child(2) > td {
 .timeline-menu__search input {
     padding: 0 15px 0 35px;
     height: 40px;
+    line-height: 1em;
 }
