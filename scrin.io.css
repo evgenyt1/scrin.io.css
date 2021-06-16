@@ -554,3 +554,7 @@ table.empls tr:nth-child(2) > td {
     color: #fff;
     text-shadow: 0 0 2px #000;
 }
+
+.timeline-menu__search input {
+    padding: 0 15px 0 35px;
+}
