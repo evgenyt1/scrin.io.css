@@ -560,3 +560,9 @@ table.empls tr:nth-child(2) > td {
     height: 40px;
     line-height: 1em;
 }
+
+
+img#btn-paypal { 
+    top: -7px!important;
+    height: 42px!important;
+}
