@@ -566,3 +566,7 @@ img#btn-paypal {
     top: -7px!important;
     height: 42px!important;
 }
+
+.charts text[id*="segmentPercentage"] {
+    fill: white !important;
+}
